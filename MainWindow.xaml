@@ -11,6 +11,28 @@
         MaxHeight="350"
         MaxWidth="750"
         Icon="/128(3).ico">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize"
+                    Value="16"></Setter>
+            <Setter Property="FontWeight"
+                    Value="Bold"></Setter>
+            <Setter Property="Margin"
+                    Value="5"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Width"
+                    Value="100"></Setter>
+            <Setter Property="Margin"
+                    Value="5"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Margin"
+                    Value="5"></Setter>
+        </Style>
+    </Window.Resources>
+    
     <StackPanel>
             <StackPanel Margin="5px">
                 <StackPanel.Background>
@@ -24,11 +46,8 @@
                                       Offset="0.377" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Text="Nombre"
-                           FontSize="16"
-                           FontWeight="Bold"
-                           Margin="5px" />
-                <TextBox Margin="5px" />
+                <TextBlock Text="Nombre"/>
+                <TextBox/>
             </StackPanel>
             <StackPanel Margin="5px">
                 <StackPanel.Background>
@@ -40,11 +59,8 @@
                                       Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Text="Dirección"
-                           FontSize="16"
-                           FontWeight="Bold"
-                           Margin="5px" />
-                <TextBox Margin="5px" />
+                <TextBlock Text="Dirección"/>
+                <TextBox/>
             </StackPanel>
             <StackPanel Margin="5px">
                 <StackPanel.Background>
@@ -56,25 +72,16 @@
                                       Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Text="Correo electrónico"
-                           FontSize="16"
-                           FontWeight="Bold"
-                           Margin="5px" />
-                <TextBox Margin="5px"
-                         Width="300"
+                <TextBlock Text="Correo electrónico"/>
+                <TextBox Width="300"
                          MaxWidth="300"
+                         MinWidth="300"
                          HorizontalAlignment="left" />
             </StackPanel>
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Right">
-                <Button Margin="5px"
-                        Width="100">
-                    Aceptar
-                </Button>
-                <Button Margin="5px"
-                        Width="100">
-                    Cancelar
-                </Button>
-            </StackPanel>
+                <Button>Aceptar</Button>
+                <Button>Cancelar</Button>
+                </StackPanel>
         </StackPanel>
 </Window>
